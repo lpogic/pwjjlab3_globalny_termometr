@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <TableView fx:id="table" layoutX="31.0" layoutY="37.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+      <HBox layoutX="357.0" layoutY="309.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="200.0" spacing="10.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+         <children>
+            <Button fx:id="exit" minWidth="-Infinity" mnemonicParsing="false" onAction="#exitAction" text="Wyjście" />
+            <ToggleButton fx:id="update" minWidth="-Infinity" mnemonicParsing="false" onAction="#updateAction" text="Aktualizuj" />
+            <Button fx:id="add" minWidth="-Infinity" mnemonicParsing="false" onAction="#addAction" text="Dodaj" />
+            <TextField fx:id="input" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="1000.0" promptText="Podaj miasto" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
